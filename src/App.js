@@ -42,9 +42,6 @@ function App() {
   const removeBlocks = () => {
     if (model.won == false) { // prevents blocks from being removed if board is de-activated (game is won)
       model.removeBlocks()
-      if (model.board.isWon() == true) { // checks to see if the game is now won
-        model.won = true
-      }
     }
     forceRedraw(redraw + 1)   // react to changes, if model has changed.
   }
@@ -61,7 +58,7 @@ function App() {
     forceRedraw(redraw + 1)   // react to changes, if model has changed.
   }
 
-
+  // HTML Code for GUI elements
   return (
     <div className="App" ref={appRef}>
       <canvas tabIndex="1"
@@ -81,7 +78,7 @@ function App() {
       <button className='config2button' data-testid="config2button" onClick={(e) => chooseConfiguration(1)} >config 2</button>
       <button className='config3button' data-testid="config3button" onClick={(e) => chooseConfiguration(2)} >config 3</button>
       <button className='resetbutton' data-testid="resetbutton" onClick={(e) => resetConfiguration()} >reset</button>
-      <img id="ninjase" src={ninjase} alt="hidden" hidden></img>
+      <img id="ninjase"  src={ninjase} alt="hidden" hidden></img>
 
     </div>
   );
