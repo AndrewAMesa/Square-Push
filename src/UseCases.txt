@@ -22,7 +22,6 @@ UC 3: Remove Group
     1) User requests to remove groups
     2) SquarePushApp removes groups, and refreshes display
 
-
 UC 4: Reset Game
 Participating Actor: Initiated by User
 Entry Condition: Puzzle configuration chosen
