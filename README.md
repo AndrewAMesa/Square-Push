@@ -1,2 +1,2 @@
 # squarepush
-Small video game to learn React, JavaScript, CSS, and HTML
+This video game was created to learn React, JavaScript, CSS, and HTML.
