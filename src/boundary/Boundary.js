@@ -49,7 +49,7 @@ export function redrawCanvas(model, canvasObj, appObj) {
   // run if game has been won
   if (model.won == true) {
     // draw black background
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = 'rgba(0, 0, 0, .9)'
     ctx.fillRect(50, 50, 335, 335)
 
     // draw the win congrats message on the board
